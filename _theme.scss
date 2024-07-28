@@ -1,0 +1,37 @@
+
+html:has(.theme__checkbox:checked) {
+    --color-white: #03040a;
+    --color-secondColor: #aeb2c3;
+    --color-dark-blue: #f53838b1;
+    --color-black: white;
+  }
+  html:has(.theme__checkbox:checked) .button {
+    background-color: transparent;
+    border: 0.1rem solid #f53838;
+    color: #f53838;
+  }
+  html:has(.theme__checkbox:checked) .button:hover {
+    border: 0.1rem solid var(--color-secondColor);
+    color: var(--color-secondColor);
+  }
+  html:has(.theme__checkbox:checked) .testimonial-content {
+    color: var(--color-secondColor);
+  }
+  html:has(.theme__checkbox:checked) .testimonial-name {
+    color: var(--color-dark-blue);
+  }
+  html:has(.theme__checkbox:checked) .subscribing,
+  html:has(.theme__checkbox:checked) .about-stats {
+    box-shadow: 0px 0px 20px 6px hsla(0, 0%, 100%, 0.05);
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    html:has(.theme__checkbox:checked) .about-stats {
+      box-shadow: none;
+    }
+    html:has(.theme__checkbox:checked) .about-stats__column {
+      box-shadow: 0px 0px 20px 6px hsla(0, 0%, 100%, 0.05);
+    }
+  }
+  html:has(.theme__checkbox:checked) .footer__icon {
+    background-color: var(--color-secondColor);
+  }
